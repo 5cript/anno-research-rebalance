@@ -1,0 +1,406 @@
+<ModOps>
+    <!-- Major Discoveries -->
+    <!-- <ModOp GUID='126888' Path="/Values/ProgressBalancing" Type="merge">
+        <Progress>
+          <Item>
+            <Value>1000</Value>
+          </Item>
+          <Item>
+            <Threshold>1</Threshold>
+            <Value>2000</Value>
+          </Item>
+          <Item>
+            <Threshold>2</Threshold>
+            <Value>3000</Value>
+          </Item>
+        </Progress>
+        <PostProgress>
+          <ThresholdInterval>1</ThresholdInterval>
+          <ValueIncrease>1000</ValueIncrease>
+        </PostProgress>
+        <AbsoluteLimit>5000</AbsoluteLimit>
+    </ModOp> -->
+
+	<!-- Feature Time -->
+	<ModOp GUID = '120244' Type = "replace" Path = '/Values/ResearchFeature/ItemCraftingConfig/*/MaximumWorkforceTime'>
+        <MaximumWorkforceTime>30000</MaximumWorkforceTime>
+    </ModOp>
+    <ModOp GUID = '120244' Type = "replace" Path = '/Values/ResearchFeature/ItemCraftingConfig/*/MaximumWorkforceAmount'>
+        <MaximumWorkforceAmount>50000</MaximumWorkforceAmount>
+    </ModOp>
+
+    <!-- Item Crafting Time -->
+    <ModOp GUID='120244' Type="merge" Path="/Values/ResearchFeature/ItemCraftingConfig">
+        <Common>
+            <MinimumWorkforceAmount>1</MinimumWorkforceAmount>
+            <MinimumWorkforceTime>180000</MinimumWorkforceTime>
+            <MaximumWorkforceAmount>50000</MaximumWorkforceAmount>
+            <MaximumWorkforceTime>30000</MaximumWorkforceTime>
+        </Common>
+        <Uncommon>
+            <MinimumWorkforceAmount>100</MinimumWorkforceAmount>
+            <MinimumWorkforceTime>180000</MinimumWorkforceTime>
+            <MaximumWorkforceAmount>50000</MaximumWorkforceAmount>
+            <MaximumWorkforceTime>30000</MaximumWorkforceTime>
+        </Uncommon>
+        <Rare>
+            <MinimumWorkforceAmount>250</MinimumWorkforceAmount>
+            <MinimumWorkforceTime>270000</MinimumWorkforceTime>
+            <MaximumWorkforceAmount>50000</MaximumWorkforceAmount>
+            <MaximumWorkforceTime>30000</MaximumWorkforceTime>
+        </Rare>
+        <Epic>
+            <MinimumWorkforceAmount>500</MinimumWorkforceAmount>
+            <MinimumWorkforceTime>360000</MinimumWorkforceTime>
+            <MaximumWorkforceAmount>50000</MaximumWorkforceAmount>
+            <MaximumWorkforceTime>30000</MaximumWorkforceTime>
+        </Epic>
+        <Legendary>
+            <MinimumWorkforceAmount>1000</MinimumWorkforceAmount>
+            <MinimumWorkforceTime>540000</MinimumWorkforceTime>
+            <MaximumWorkforceAmount>50000</MaximumWorkforceAmount>
+            <MaximumWorkforceTime>30000</MaximumWorkforceTime>
+        </Legendary>
+    </ModOp>
+
+
+    <!-- Godlike chance increase??? -->
+    <ModOp GUID='120244' Path="/Values/ResearchFeature/ProgressBalancing" Type="merge">
+        <ChanceForGodlikePercent>10</ChanceForGodlikePercent>
+    </ModOp>
+
+    <!-- Item Discovery Cost -->
+    <!-- <ModOp GUID='123401' Path="/Values/ProgressBalancing" Type="merge">
+        <Progress>
+        <Item>
+            <Value>100</Value>
+        </Item>
+        <Item>
+            <Threshold>1</Threshold>
+            <Value>150</Value>
+        </Item>
+        <Item>
+            <Threshold>2</Threshold>
+            <Value>200</Value>
+        </Item>
+        <Item>
+            <Threshold>3</Threshold>
+            <Value>250</Value>
+        </Item>
+        <Item>
+            <Threshold>4</Threshold>
+            <Value>300</Value>
+        </Item>
+        <Item>
+            <Threshold>5</Threshold>
+            <Value>350</Value>
+        </Item>
+        <Item>
+            <Threshold>6</Threshold>
+            <Value>400</Value>
+        </Item>
+        <Item>
+            <Threshold>7</Threshold>
+            <Value>450</Value>
+        </Item>
+        <Item>
+            <Threshold>8</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>9</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>10</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>11</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>12</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>13</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>14</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>15</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>16</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>17</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>18</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>19</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>20</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>21</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>22</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>23</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>24</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>25</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>26</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>27</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>28</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>29</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>30</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>31</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>32</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>33</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>34</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>35</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>36</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>37</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>38</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>39</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>40</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>41</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>42</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>43</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>44</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>45</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>46</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>47</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>48</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>49</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>50</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>51</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>52</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>53</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>54</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>55</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>56</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>57</Threshold>
+            <Value>500</Value>
+        </Item>
+        <Item>
+            <Threshold>58</Threshold>
+            <Value>500</Value>
+        </Item>
+        </Progress>
+        <PostProgress>
+            <ThresholdInterval>1</ThresholdInterval>
+            <ValueIncrease>0</ValueIncrease>
+        </PostProgress>
+
+    </ModOp> -->
+
+    <!-- Research Point Limits -->
+    <!-- <ModOp GUID='123399' Path="/Values/ProgressBalancing" Type="merge">
+        <Progress>
+            <Item>
+                <Value>1000</Value>
+            </Item>
+            <Item>
+                <Threshold>500</Threshold>
+                <Value>2000</Value>
+            </Item>
+            <Item>
+                <Threshold>600</Threshold>
+                <Value>3000</Value>
+            </Item>
+        </Progress>
+        <PostProgress>
+            <ThresholdInterval>100</ThresholdInterval>
+            <ValueIncrease>1000</ValueIncrease>
+        </PostProgress>
+    </ModOp> -->
+
+    <!-- Item Development -->
+    <ModOp GUID='128955' Path="/Values/ProgressBalancing" Type="merge">
+        <Progress>
+            <Item>
+                <Value>100000</Value>
+            </Item>
+        </Progress>
+        <PostProgress>
+            <ThresholdInterval>1</ThresholdInterval>
+            <ValueIncrease>0</ValueIncrease>
+        </PostProgress>
+    </ModOp>
+
+    <ModOp GUID='128954' Path="/Values/ProgressBalancing" Type="merge">
+        <Progress>
+            <Item>
+                <Value>25000</Value>
+            </Item>
+        </Progress>
+        <PostProgress>
+            <ThresholdInterval>1</ThresholdInterval>
+            <ValueIncrease>0</ValueIncrease>
+        </PostProgress>
+    </ModOp>
+
+    <ModOp GUID='128953' Path="/Values/ProgressBalancing" Type="merge">
+        <Progress>
+            <Item>
+                <Value>10000</Value>
+            </Item>
+        </Progress>
+        <PostProgress>
+            <ThresholdInterval>1</ThresholdInterval>
+            <ValueIncrease>0</ValueIncrease>
+        </PostProgress>
+    </ModOp>
+
+    <ModOp GUID='128952' Path="/Values/ProgressBalancing" Type="merge">
+        <Progress>
+            <Item>
+                <Value>1000</Value>
+            </Item>
+        </Progress>
+        <PostProgress>
+            <ThresholdInterval>1</ThresholdInterval>
+            <ValueIncrease>0</ValueIncrease>
+        </PostProgress>
+    </ModOp>
+
+    <ModOp GUID='128475' Path="/Values/ProgressBalancing" Type="merge">
+        <Progress>
+            <Item>
+                <Value>500</Value>
+            </Item>
+        </Progress>
+        <PostProgress>
+            <ThresholdInterval>1</ThresholdInterval>
+            <ValueIncrease>0</ValueIncrease>
+        </PostProgress>
+    </ModOp>
+
+    <ModOp Path = "//Godlike/CraftingConfig/MaximumWorkforceAmount" Type = "replace">
+        <MaximumWorkforceAmount>50000</MaximumWorkforceAmount>
+    </ModOp>
+    <ModOp Path = "//Godlike/CraftingConfig/MaximumWorkforceTime" Type = "replace">
+        <MaximumWorkforceTime>30000</MaximumWorkforceTime>
+    </ModOp>
+</ModOps>

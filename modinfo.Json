@@ -1,0 +1,57 @@
+{
+    "Version": "1.0",
+    "ModID": "Rebalanced_Research",
+    "IncompatibleIds": [
+        "NewHorizons"
+    ],
+    "ModDependencies": null,
+    "Category": {
+        "Chinese": null,
+        "English": "Gameplay",
+        "French": null,
+        "German": null,
+        "Italian": null,
+        "Japanese": null,
+        "Korean": null,
+        "Polish": null,
+        "Russian": null,
+        "Spanish": null,
+        "Taiwanese": null
+    },
+    "ModName": {
+        "Chinese": null,
+        "English": "Rebalanced Research",
+        "French": "Recherche Rééquilibrée",
+        "German": "Forschung Rebalanciert",
+        "Italian": "Ricerca Ribilanciata",
+        "Japanese": null,
+        "Korean": null,
+        "Polish": null,
+        "Russian": null,
+        "Spanish": null,
+        "Taiwanese": null
+    },
+    "Description": {
+        "Chinese": null,
+        "English": "Makes items cost a fix amount and makes them research faster for more workforce.",
+        "French": null,
+        "German": "Erhöht die Forschungsgeschwindigkeit bei höherer Arbeitskraft und setzt die Kosten für Gegenstände auf einen festen Betrag.",
+        "Italian": null,
+        "Japanese": null,
+        "Korean": null,
+        "Polish": null,
+        "Russian": null,
+        "Spanish": null,
+        "Taiwanese": null
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [
+        {
+            "DLC": "LandOfLions",
+            "Dependant": "required"
+        }
+    ],
+    "CreatorName": "5cript",
+    "CreatorContact": "",
+    "Image": null
+}
